@@ -1,0 +1,11 @@
+prosty sql, zlozonosc niewiadomo, awk, object nie bedzie, awk, programiki male, assembler 100%, obwodzik bedzie,
+
+
+bramki
+c
+assembler
+python
+funkcja rekurencyjna
+awk (analizuje program z poprzedniego zadania w c (tablica))
+awk, ktory zm
+

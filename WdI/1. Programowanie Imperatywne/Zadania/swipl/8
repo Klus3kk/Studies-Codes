@@ -1,0 +1,19 @@
+:-initialization(main).
+father(elizabeth2, george6).
+father(george6, george5).
+father(george5, edward7).
+father(edward7, albertCoburg).
+father(aliceHesse, albertCoburg).
+mother(elizabeth2, elizabethBowesLyon).
+mother(george6, maryTeck).
+mother(george5, alexandraDenmark).
+mother(edward7, queenVictoria).
+mother(aliceHesse, queenVictoria).
+parent(X,Y):-father(X,Y); mother(X,Y).
+grandma(X,Y):-parent(X,Z), mother(Z,Y).
+grandpa(X,Y):-parent(X,Z), father(Z,Y).
+greatGrandma(X,Y):-parent(X,Z), grandma(Z,Y).
+greatGrandpa(X,Y):-parent(X,Z), grandpa(Z,Y).
+great2Grandma(X,Y):-parent(X,Z), greatGrandma(Z,Y).
+great2Grandpa(X,Y):-parent(X,Z), greatGrandpa(Z,Y).
+main:-great2Grandma(elizabeth2,Y),write(Y), nl.

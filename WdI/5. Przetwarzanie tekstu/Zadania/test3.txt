@@ -1,0 +1,2 @@
+Jurek 10 Adam 200
+Params: 3 40 -5 

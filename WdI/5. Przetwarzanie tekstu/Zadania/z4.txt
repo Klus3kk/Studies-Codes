@@ -1,0 +1,3 @@
+BEGIN { print "-----"; }
+$4=="I2" { print $2, $1; }
+END { print "*****"; } 
