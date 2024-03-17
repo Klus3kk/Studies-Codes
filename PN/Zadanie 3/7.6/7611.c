@@ -1,39 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-void replaceWithSquares(int number) {
-    int squares[10]; // Tablica na kwadraty cyfr
-    int result = 0;
-    int position = 1;
 
-    // Wypełnij tablicę kwadratami cyfr
-    for (int i = 0; i < 10; i++) {
-        squares[i] = i * i;
+void replaceWithSquares(int n) {
+    int k = 0, i = 0;
+    int numbers[100]; 
+    while(n > 0 && i < 100) {
+        k = n % 10;
+        n = n / 10;
+        numbers[i] = k * k;
+        i++;
     }
-
-    // Zastąp cyfry ich kwadratami i dodaj do wyniku
-    while (number > 0) {
-        int digit = number % 10;
-        result += squares[digit] * position;
-        position *= 10;
-        number /= 10;
+    for(int j = i - 1; j >= 0; j--) {
+        printf("%d", numbers[j]);
     }
-
-    printf("Wynik: %d\n", result);
 }
 
 int main() {
-    char numberStr[100]; // Tablica na wczytaną liczbę jako łańcuch znaków
+    int n;
 
-    // Wczytaj liczbę jako łańcuch znaków
-    printf("Podaj liczbę: ");
-    scanf("%s", numberStr);
+    printf("Podaj liczbe: ");
+    scanf("%d", &n);
 
-    // Przekonwertuj łańcuch na liczbę całkowitą
-    int number = atoi(numberStr);
-
-    // Wywołaj funkcję replaceWithSquares
-    replaceWithSquares(number);
+    replaceWithSquares(n);
 
     return 0;
 }

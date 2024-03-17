@@ -1,26 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void replaceWithAddedNumbers(int number) {
-    int temp = number;
-    int result = 0;
-    int position = 1;
-    int adder = 1;
 
-    while (temp > 0) {
-        int digit = temp % 10;
-        result += (digit + adder) * position;
-        position *= 10;
-        adder++;
-        temp /= 10;
+void replaceWithSquares(int n) {
+    int k = 0, i = 0;
+    int numbers[100]; 
+    while(n > 0 && i < 100) {
+        k = n % 10;
+        n = n / 10;
+        numbers[i] = k;
+        i++;
     }
-
-    printf("ZADANIE 7.6.14: %d\n", result);
+    for(int j = i - 1; j >= 0; j--) {
+        printf("%d", numbers[j] + j + 1);
+    }
 }
 
-
 int main() {
-    int x;
-    printf("Podaj liczbe x: ");
-    scanf("%d", &x);
+    int n;
+
+    printf("Podaj liczbe: ");
+    scanf("%d", &n);
+
+    replaceWithSquares(n);
+
     return 0;
 }
