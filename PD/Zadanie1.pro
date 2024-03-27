@@ -69,7 +69,5 @@ mąż(X,Y) :- małżeństwo(Y,X),(mężczyzna(X)).
 teściowa(X,Y) :- matka(X,Z),małżeństwo(Y,Z), mężczyzna(Y).
 teściowa(X,Y) :- matka(X,Z),małżeństwo(Z,Y), mężczyzna(Y).
 
-
-
 szwagier(X,Y) :- żona(Z,Y), rodzeństwo(Z, X), mężczyzna(Y),mężczyzna(X). % brat żony
 szwagier(X,Y) :- żona(Z,X), rodzeństwo(Z, Y), mężczyzna(X). % mąż siostry ()
