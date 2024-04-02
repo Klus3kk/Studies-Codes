@@ -1,44 +1,44 @@
-% Zad.1 :- rekurencja(po��czenie(A,B)).
-next(�winouj�cie,ko�obrzeg).
-next(�winouj�cie, szczecin).
-next(ko�obrzeg,ustka).
-next(ustka, gda�sk).
-next(gda�sk,toru�).
-next(gda�sk,olsztyn).
-next(olsztyn,toru�).
-next(olsztyn,bia�ystok).
+% Zad.1 :- rekurencja(połączenie(A,B)).
+next(świnoujście,kołobrzeg).
+next(świnoujście, szczecin).
+next(kołobrzeg,ustka).
+next(ustka, gdańsk).
+next(gdańsk,toruń).
+next(gdańsk,olsztyn).
+next(olsztyn,toruń).
+next(olsztyn,białystok).
 next(szczecin,bydgoszcz).
-next(szczecin, gorz�w-wlkp).
-next(bydgoszcz,toru�).
-next(bydgoszcz,pozna�).
-next(pozna�,toru�).
-next(gorz�w-wlkp,pozna�).
-next(gorz�w-wlkp,zielona-g�ra).
-next(zielona-g�ra,pozna�).
-next(zielona-g�ra,wroc�aw).
-next(toru�,��d�).
-next(toru�,warszawa).
-next(bia�ystok, warszawa).
-next(bia�ystok,lublin).
-next(pozna�,��d�).
+next(szczecin, gorzów-wlkp).
+next(bydgoszcz,toruń).
+next(bydgoszcz,poznań).
+next(poznań,toruń).
+next(gorzów-wlkp,poznań).
+next(gorzów-wlkp,zielona-góra).
+next(zielona-góra,poznań).
+next(zielona-góra,wrocław).
+next(toruń,łódź).
+next(toruń,warszawa).
+next(białystok, warszawa).
+next(białystok,lublin).
+next(poznań,łódź).
 next(warszawa,radom).
-next(warszawa,��d�).
+next(warszawa,łódź).
 next(radom,lublin).
 next(radom,kielce).
-next(wroc�aw,��d�).
-next(��d�,radom).
-next(��d�,cz�stochowa).
-next(cz�stochowa,kielce).
-next(cz�stochowa,katowice).
-next(katowice,krak�w).
-next(kielce,krak�w).
-next(kielce,rzesz�w).
+next(wrocław,łódź).
+next(łódź,radom).
+next(łódź,częstochowa).
+next(częstochowa,kielce).
+next(częstochowa,katowice).
+next(katowice,kraków).
+next(kielce,kraków).
+next(kielce,rzeszów).
 next(lublin,kielce).
-next(lublin,rzesz�w).
-next(krak�w,rzesz�w).
+next(lublin,rzeszów).
+next(kraków,rzeszów).
 
-po��czenie(A,B) :- next(A,B).
-po��czenie(A,B) :- next(A,C), po��czenie(C,B).
+połączenie(A,B) :- next(A,B).
+połączenie(A,B) :- next(A,C), połączenie(C,B).
 
 % Zad 2 :- rekurencja(zjazd(X,Y,Z)).
 zjazd(X,Y,Z) :- X = Z, next(Z,Y).
@@ -52,7 +52,6 @@ trasa(X,Y,obok(X,obok(Z,W))) :- next(X,Z), trasa(Z,Y,obok(Z,W)).
 trasa2(X,Y,obok(X,Y)) :- next(X,Y).
 trasa2(X,Y,obok(obok(W,Z),Y)) :- next(Z,Y), trasa2(X,Z,obok(W,Z)).
 
-% Zad 5. (trzecie zadanie, tylko trzeba u�y� list (jednak trzeba troch� zmieni�))
+% Zad 5. (trzecie zadanie, tylko trzeba użyć list (jednak trzeba trochę zmienić))
 trasa3(X,Y,[X,Y]) :- next(X,Y).
 trasa3(X,Y,[X|W]) :- next(X,Z), trasa3(Z,Y,W). % hmm...
-
