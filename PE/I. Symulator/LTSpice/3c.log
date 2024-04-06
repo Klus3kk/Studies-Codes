@@ -1,0 +1,808 @@
+LTspice 24.0.9 for Windows
+Circuit: * C:\Users\lukas\Desktop\Podstawy Elektroniki\LTSpice\3c.asc
+Start Time: Fri Apr  5 19:17:49 2024
+solver = Normal
+Maximum thread count: 16
+
+
+
+.OP point found by inspection.
+.step r=10
+
+
+
+.step r=20
+
+
+
+.step r=30
+
+
+
+.step r=40
+
+
+
+.step r=50
+
+
+
+.step r=60
+
+
+
+.step r=70
+
+
+
+.step r=80
+
+
+
+.step r=90
+
+
+
+.step r=100
+
+
+
+.step r=110
+
+
+
+.step r=120
+
+
+
+.step r=130
+
+
+
+.step r=140
+
+
+
+.step r=150
+
+
+
+.step r=160
+
+
+
+.step r=170
+
+
+
+.step r=180
+
+
+
+.step r=190
+
+
+
+.step r=200
+
+
+
+.step r=210
+
+
+
+.step r=220
+
+
+
+.step r=230
+
+
+
+.step r=240
+
+
+
+.step r=250
+
+
+
+.step r=260
+
+
+
+.step r=270
+
+
+
+.step r=280
+
+
+
+.step r=290
+
+
+
+.step r=300
+
+
+
+.step r=310
+
+
+
+.step r=320
+
+
+
+.step r=330
+
+
+
+.step r=340
+
+
+
+.step r=350
+
+
+
+.step r=360
+
+
+
+.step r=370
+
+
+
+.step r=380
+
+
+
+.step r=390
+
+
+
+.step r=400
+
+
+
+.step r=410
+
+
+
+.step r=420
+
+
+
+.step r=430
+
+
+
+.step r=440
+
+
+
+.step r=450
+
+
+
+.step r=460
+
+
+
+.step r=470
+
+
+
+.step r=480
+
+
+
+.step r=490
+
+
+
+.step r=500
+
+
+
+.step r=510
+
+
+
+.step r=520
+
+
+
+.step r=530
+
+
+
+.step r=540
+
+
+
+.step r=550
+
+
+
+.step r=560
+
+
+
+.step r=570
+
+
+
+.step r=580
+
+
+
+.step r=590
+
+
+
+.step r=600
+
+
+
+.step r=610
+
+
+
+.step r=620
+
+
+
+.step r=630
+
+
+
+.step r=640
+
+
+
+.step r=650
+
+
+
+.step r=660
+
+
+
+.step r=670
+
+
+
+.step r=680
+
+
+
+.step r=690
+
+
+
+.step r=700
+
+
+
+.step r=710
+
+
+
+.step r=720
+
+
+
+.step r=730
+
+
+
+.step r=740
+
+
+
+.step r=750
+
+
+
+.step r=760
+
+
+
+.step r=770
+
+
+
+.step r=780
+
+
+
+.step r=790
+
+
+
+.step r=800
+
+
+
+.step r=810
+
+
+
+.step r=820
+
+
+
+.step r=830
+
+
+
+.step r=840
+
+
+
+.step r=850
+
+
+
+.step r=860
+
+
+
+.step r=870
+
+
+
+.step r=880
+
+
+
+.step r=890
+
+
+
+.step r=900
+
+
+
+.step r=910
+
+
+
+.step r=920
+
+
+
+.step r=930
+
+
+
+.step r=940
+
+
+
+.step r=950
+
+
+
+.step r=960
+
+
+
+.step r=970
+
+
+
+.step r=980
+
+
+
+.step r=990
+
+
+
+.step r=1000
+
+
+
+.step r=1010
+
+
+
+.step r=1020
+
+
+
+.step r=1030
+
+
+
+.step r=1040
+
+
+
+.step r=1050
+
+
+
+.step r=1060
+
+
+
+.step r=1070
+
+
+
+.step r=1080
+
+
+
+.step r=1090
+
+
+
+.step r=1100
+
+
+
+.step r=1110
+
+
+
+.step r=1120
+
+
+
+.step r=1130
+
+
+
+.step r=1140
+
+
+
+.step r=1150
+
+
+
+.step r=1160
+
+
+
+.step r=1170
+
+
+
+.step r=1180
+
+
+
+.step r=1190
+
+
+
+.step r=1200
+
+
+
+.step r=1210
+
+
+
+.step r=1220
+
+
+
+.step r=1230
+
+
+
+.step r=1240
+
+
+
+.step r=1250
+
+
+
+.step r=1260
+
+
+
+.step r=1270
+
+
+
+.step r=1280
+
+
+
+.step r=1290
+
+
+
+.step r=1300
+
+
+
+.step r=1310
+
+
+
+.step r=1320
+
+
+
+.step r=1330
+
+
+
+.step r=1340
+
+
+
+.step r=1350
+
+
+
+.step r=1360
+
+
+
+.step r=1370
+
+
+
+.step r=1380
+
+
+
+.step r=1390
+
+
+
+.step r=1400
+
+
+
+.step r=1410
+
+
+
+.step r=1420
+
+
+
+.step r=1430
+
+
+
+.step r=1440
+
+
+
+.step r=1450
+
+
+
+.step r=1460
+
+
+
+.step r=1470
+
+
+
+.step r=1480
+
+
+
+.step r=1490
+
+
+
+.step r=1500
+
+
+
+.step r=1510
+
+
+
+.step r=1520
+
+
+
+.step r=1530
+
+
+
+.step r=1540
+
+
+
+.step r=1550
+
+
+
+.step r=1560
+
+
+
+.step r=1570
+
+
+
+.step r=1580
+
+
+
+.step r=1590
+
+
+
+.step r=1600
+
+
+
+.step r=1610
+
+
+
+.step r=1620
+
+
+
+.step r=1630
+
+
+
+.step r=1640
+
+
+
+.step r=1650
+
+
+
+.step r=1660
+
+
+
+.step r=1670
+
+
+
+.step r=1680
+
+
+
+.step r=1690
+
+
+
+.step r=1700
+
+
+
+.step r=1710
+
+
+
+.step r=1720
+
+
+
+.step r=1730
+
+
+
+.step r=1740
+
+
+
+.step r=1750
+
+
+
+.step r=1760
+
+
+
+.step r=1770
+
+
+
+.step r=1780
+
+
+
+.step r=1790
+
+
+
+.step r=1800
+
+
+
+.step r=1810
+
+
+
+.step r=1820
+
+
+
+.step r=1830
+
+
+
+.step r=1840
+
+
+
+.step r=1850
+
+
+
+.step r=1860
+
+
+
+.step r=1870
+
+
+
+.step r=1880
+
+
+
+.step r=1890
+
+
+
+.step r=1900
+
+
+
+.step r=1910
+
+
+
+.step r=1920
+
+
+
+.step r=1930
+
+
+
+.step r=1940
+
+
+
+.step r=1950
+
+
+
+.step r=1960
+
+
+
+.step r=1970
+
+
+
+.step r=1980
+
+
+
+.step r=1990
+tnom = 27
+temp = 27
+method = modified trap
+.step r=2000
+Total elapsed time: 12.720 seconds.
+
